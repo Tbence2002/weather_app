@@ -46,7 +46,7 @@ export const WeatherProvider = ({ children }) => {
     }, [state.userLocation]);
 
     const getAllWeatherInfoFromPosition = (latitude, longitude) => {
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=9d771ee9b9c4e223095e65a820c0fb16`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_API_KEY}`)
             .then((response) => {
                 dispatch({
                     type:"GET_WEATHER",
@@ -62,7 +62,7 @@ export const WeatherProvider = ({ children }) => {
     }
 
     const getAllDailyForecastFromPosition = (latitude, longitude) => {
-        axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=9d771ee9b9c4e223095e65a820c0fb16`)
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${process.env.REACT_APP_API_KEY}`)
             .then((response) => {
                 dispatch({
                     type:"GET_FORECAST",
@@ -79,7 +79,7 @@ export const WeatherProvider = ({ children }) => {
 
     
       const getAllWeatherInfoFromSearch = (search) => {
-        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=9d771ee9b9c4e223095e65a820c0fb16`)
+        axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=${process.env.REACT_APP_API_KEY}`)
             .then((response) => {
               dispatch({
                 type: "GET_WEATHER",
@@ -94,7 +94,7 @@ export const WeatherProvider = ({ children }) => {
       }
     
       const getAllDailyForecastFromSearch = (search) => {
-        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${search}&appid=9d771ee9b9c4e223095e65a820c0fb16`)
+        axios.get(`https://api.openweathermap.org/data/2.5/forecast?q=${search}&appid=${process.env.REACT_APP_API_KEY}`)
             .then((response) => {
               dispatch({
                 type: "GET_FORECAST",
