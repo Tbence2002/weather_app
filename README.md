@@ -10,5 +10,6 @@ A projekt node_modules könyvtár nélkül került feltöltésre, ezt az indít�
 A telepítést követően npm start parancssal futtatható a projekt.
 
  ## Tovább fejlesztés a közeljövőben
- A weboldal háttérképe mindig az aktuális időjárásnak megfelelően változzon.
+ 
+ A weboldal háttérképe mindig az aktuális időjárásnak megfelelően változzon. -> 2024.02.19-én elkészült.
  Előrejelzés esetén ki lehessen választani, hogy mely nap előrejelzés adatait szeretnénk megtekinteni.
