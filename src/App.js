@@ -1,5 +1,5 @@
 import { Hero } from "./components";
-import "./css/index.css"
+import "./css/index.scss"
 
 function App() {
   return (
