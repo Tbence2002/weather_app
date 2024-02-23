@@ -94,10 +94,12 @@
             font-size: 2rem;
             margin: 0;
         }
+
         .hero__diagram-content {
             display: flex;
-            gap:3rem;
+            gap: 3rem;
         }
+
         .hero__diagram {
             display: flex;
             flex-wrap: wrap;
@@ -219,7 +221,7 @@
                     }
                 }
 
-                button.ant-switch.ant-switch{
+                button.ant-switch.ant-switch {
                     background-color: $darkGrey;
 
                 }
@@ -288,15 +290,23 @@
         }
     }
 }
+
 @media(max-width:1283px) {
     .hero__image {
         height: 100%;
+
+        .hero__image__clear-sky,
+        .hero__image__rain,
+        .hero__image__snow {
+            height: 100%;
+        }
 
         .hero__permission-denied {
             padding: 2rem;
         }
     }
 }
+
 @media(max-width:1069px) {
     .hero__image {
 
@@ -340,8 +350,8 @@
                 }
 
                 .hero__line {
-                   height: 1px;
-                   width: 50%;
+                    height: 1px;
+                    width: 50%;
                 }
             }
 
@@ -349,13 +359,14 @@
                 text-align: center;
                 padding: 0rem 1rem;
 
-                .hero__daily-forecast  {
+                .hero__daily-forecast {
                     gap: 1.5rem;
                     padding: 0rem 2rem;
                     flex-wrap: wrap;
                 }
             }
         }
+
         .hero__footer {
             width: 80%;
 
@@ -363,15 +374,17 @@
                 align-items: start;
                 justify-content: center;
                 flex-wrap: wrap;
-                
+
                 .hero__footer-box {
                     padding: 0rem 0rem 0.5rem 0rem;
                     margin: 0rem 2rem 1rem 2rem;
 
                 }
+
                 .footer__search {
                     margin-top: 1rem;
                 }
+
                 .footer__line {
                     display: none;
                 }
@@ -379,6 +392,7 @@
         }
     }
 }
+
 @media(max-width:744px) {
     .hero__image {
 
@@ -389,7 +403,7 @@
         .hero__footer {
             .hero__footer-content {
                 flex-direction: column;
-    
+
                 .hero__footer-box {
                     margin: 0;
                     padding: 0rem 0rem 0.5rem 0rem;
